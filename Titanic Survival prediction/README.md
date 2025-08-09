@@ -24,7 +24,7 @@ project-1-titanic-survival/
 ├── titanic.ipynb           # Notebook with EDA, preprocessing, model training
 ├── main.py                 # Streamlit web app
 ├── model.pkl               # Saved ML model
-├── requirements.txt        # Dependencies
+├── requirementss.txt        # Dependencies
 ├── data/                   # Dataset files
 │   ├── train.csv
 │   ├── test.csv
