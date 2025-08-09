@@ -5,8 +5,15 @@
 ![Streamlit](https://img.shields.io/badge/Deployed%20With-Streamlit-brightgreen)
 ![Status](https://img.shields.io/badge/Status-Complete-success)
 
-Predict whether a passenger would have survived the Titanic disaster based on their personal and ticket information.
+Predict whether a passenger would have survived the Titanic disaster based on personal and ticket information.  
+This project demonstrates the **entire ML lifecycle** — from **data preprocessing, feature engineering, model building, and evaluation** to **deployment as a web application**.
 This **end-to-end machine learning project** covers **data cleaning, EDA, feature engineering, model building, evaluation, and deployment**.
+
+---
+## 🛠 Tech Stack
+**Languages & Libraries:** Python, Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn  
+**ML Algorithm:** Random Forest Classifier  
+**Deployment:** Streamlit  
 
 ---
 
