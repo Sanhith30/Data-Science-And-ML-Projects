@@ -68,7 +68,6 @@ project-1-titanic-survival/
   - First-class passengers were more likely to survive
   - Younger passengers had slightly better survival odds
 
-*(Add EDA plots here)*
 
 ---
 
@@ -99,7 +98,8 @@ streamlit run main.py
 ---
 
 ## 📸 Screenshots
-![alt text](Screenshot 2025-08-09 165811.png)
+![Titanic App Screenshot]( "images/Screenshot 2025-08-09 165811.png" )
+
 
 
 
