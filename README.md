@@ -4,7 +4,7 @@ A collection of end-to-end Data Science and Machine Learning projects with expla
 
 ## Projects
 
-### [Titanic Survival Prediction](https://github.com/Sanhith30/Data-Science-And-ML-Projects/tree/main/Titanic%20Survival%20prediction)
+### [1st Titanic Survival Prediction](https://github.com/Sanhith30/Data-Science-And-ML-Projects/tree/main/Titanic%20Survival%20prediction)
 A comprehensive data analysis and machine learning project focused on predicting passenger survival on the Titanic.  
 This project includes:
 - **Data Exploration & Cleaning**
