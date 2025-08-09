@@ -77,6 +77,12 @@ project-1-titanic-survival/
 
 
 ---
+**Key Findings:**  
+- Women had a **much higher survival rate** than men  
+- First-class passengers more likely to survive  
+- Younger passengers had a slightly better survival rate  
+
+---
 
 ## 🚀 Run Locally
 ### 1️⃣ Clone the Repository
@@ -100,14 +106,20 @@ streamlit run main.py
 ---
 
 ## 🌐 Live Demo
-[Live Demo Link](https://titanic-survival-prediction-sanhith.streamlit.app/)
+[Live Demo Link]("https://titanic-survival-prediction-sanhith.streamlit.app/")
 
 ---
 
 ## 📸 Screenshots
 ![Titanic App Screenshot](images/Screenshot.png )
 
+## 🔮 Future Improvements
+- Try Gradient Boosting (XGBoost, LightGBM) for better accuracy
+- Perform hyperparameter tuning with GridSearchCV
+- Add SHAP/feature importance plots for explainability
+- Improve UI/UX in the Streamlit app
 
+---
 
 
 ## 🏆 Skills Demonstrated
