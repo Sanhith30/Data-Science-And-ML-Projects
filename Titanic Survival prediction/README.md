@@ -22,7 +22,7 @@ project-1-titanic-survival/
 │   ├── train.csv
 │   ├── test.csv
 │   └── gender_submission.csv
-
+|---images
 ```
 ---
 
@@ -99,7 +99,7 @@ streamlit run main.py
 ---
 
 ## 📸 Screenshots
-![alt text](image.png)
+![alt text](Screenshot 2025-08-09 165811.png)
 
 
 
