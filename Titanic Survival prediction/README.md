@@ -1,4 +1,4 @@
-# 🚢 Titanic Survival Prediction — End-to-End Machine Learning Project
+#  Titanic Survival Prediction — End-to-End Machine Learning Project
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![Machine Learning](https://img.shields.io/badge/Machine%20Learning-RandomForest-orange)
@@ -17,7 +17,7 @@ This **end-to-end machine learning project** covers **data cleaning, EDA, featur
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 ```
 project-1-titanic-survival/
 │
@@ -33,7 +33,7 @@ project-1-titanic-survival/
 ```
 ---
 
-## 📊 Dataset
+##  Dataset
 **Source:** [Kaggle Titanic Dataset](https://www.kaggle.com/c/titanic)  
 **Features:**
 - **Pclass** — Passenger class (1, 2, 3)
@@ -68,7 +68,7 @@ project-1-titanic-survival/
 
 ---
 
-## 📈 Results & Insights
+## Results & Insights
 - **Accuracy:** ~85% (RandomForest on validation set)  
 - **Key Findings:**
   - Women had a **significantly higher** survival rate than men
@@ -84,7 +84,7 @@ project-1-titanic-survival/
 
 ---
 
-## 🚀 Run Locally
+##  Run Locally
 ### 1️⃣ Clone the Repository
 ```bash
 git clone https://github.com/sanhith30/Data-Science-And-ML-Projects.git
@@ -105,15 +105,15 @@ streamlit run main.py
 
 ---
 
-## 🌐 Live Demo
-[Live Demo Link]("https://titanic-survival-prediction-sanhith.streamlit.app/")
+##  Live Demo
+<a href="https://titanic-survival-prediction-sanhith.streamlit.app/" target="_blank">Live Demo Link</a>
 
 ---
 
-## 📸 Screenshots
+##  Screenshots
 ![Titanic App Screenshot](images/Screenshot.png )
 
-## 🔮 Future Improvements
+##  Future Improvements
 - Try Gradient Boosting (XGBoost, LightGBM) for better accuracy
 - Perform hyperparameter tuning with GridSearchCV
 - Add SHAP/feature importance plots for explainability
@@ -122,7 +122,7 @@ streamlit run main.py
 ---
 
 
-## 🏆 Skills Demonstrated
+##  Skills Demonstrated
 - Data Preprocessing
 - Exploratory Data Analysis
 - Feature Engineering
@@ -131,6 +131,6 @@ streamlit run main.py
 - Web App Deployment
 
 
-## 📬 Contact
+##  Contact
 **Author:** THIKKAVARAPU SANHITH
 [LinkedIn](https://linkedin.com/in/sanhith30) | [GitHub](https://github.com/sanhith30)
