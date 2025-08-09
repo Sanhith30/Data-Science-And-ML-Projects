@@ -98,7 +98,7 @@ streamlit run main.py
 ---
 
 ## 📸 Screenshots
-![Titanic App Screenshot]( "Titanic Survival prediction/images/Screenshot.png" )
+![Titanic App Screenshot]( "images/Screenshot.png" )
 
 
 
