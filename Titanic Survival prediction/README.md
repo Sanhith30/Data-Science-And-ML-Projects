@@ -22,7 +22,7 @@ project-1-titanic-survival/
 │   ├── train.csv
 │   ├── test.csv
 │   └── gender_submission.csv
-└── images/                 # Plots & screenshots
+
 ```
 ---
 
@@ -94,7 +94,6 @@ streamlit run main.py
 ---
 
 ## 🌐 Live Demo
-*(If you deploy your Streamlit app to Streamlit Cloud, Render, or Heroku, add the link here)*  
 [Live Demo Link](https://titanic-survival-prediction-sanhith.streamlit.app/)
 
 ---
