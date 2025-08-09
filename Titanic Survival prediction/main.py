@@ -2,7 +2,8 @@ import streamlit as st
 import math
 import joblib  
 
-model = joblib.load("model.pkl")
+model = joblib.load("Titanic Survival prediction/model.pkl")
+
 
 def set_background():
     st.markdown(
@@ -72,3 +73,4 @@ if st.button("Predict"):
         0: "The passenger will not survive"
     }
     st.markdown(f"## {output_labels[result[0]]}")
+
