@@ -92,7 +92,7 @@ cd titanic survival prediction
 ```
 ### 2️⃣ Install Requirements
 ```bash
-pip install -r requirements.txt
+pip install -r requirementss.txt
 ```
 ### 3️⃣ Run the Notebook
 ```bash
