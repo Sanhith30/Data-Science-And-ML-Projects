@@ -1,4 +1,4 @@
-#  Titanic Survival Prediction — End-to-End Machine Learning Project
+#  Titanic Survival Prediction — Machine Learning Project
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![Machine Learning](https://img.shields.io/badge/Machine%20Learning-RandomForest-orange)
