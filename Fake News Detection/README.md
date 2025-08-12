@@ -123,7 +123,7 @@ streamlit run app.py
 ---
 
 ## 📸 Screenshots
-![Fake News App Screenshot](images/Screenshot.png)
+![Fake News App Screenshot](images/Screenshot 2025-08-12 113658.png)
 
 ---
 
