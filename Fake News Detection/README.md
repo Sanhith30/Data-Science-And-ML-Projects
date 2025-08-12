@@ -1,118 +1,150 @@
-# 🚢 Titanic Survival Prediction — End-to-End Machine Learning Project
+# Fake News Detection — End-to-End Machine Learning Project
 
-![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
-![Machine Learning](https://img.shields.io/badge/Machine%20Learning-RandomForest-orange)
-![Streamlit](https://img.shields.io/badge/Deployed%20With-Streamlit-brightgreen)
-![Status](https://img.shields.io/badge/Status-Complete-success)
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue) 
+![Machine Learning](https://img.shields.io/badge/Machine%20Learning-LogisticRegression-orange) 
+![Streamlit](https://img.shields.io/badge/Deployed%20With-Streamlit-brightgreen) 
+![Status](https://img.shields.io/badge/Status-Complete-success)  
 
-Predict whether a passenger would have survived the Titanic disaster based on their personal and ticket information.
-This **end-to-end machine learning project** covers **data cleaning, EDA, feature engineering, model building, evaluation, and deployment**.
+Predict whether a news article is **FAKE** or **REAL** based on its textual content.  
+
+This project demonstrates the **entire ML lifecycle** — from **data preprocessing, feature engineering, model building, and evaluation** to **deployment as a web application**.  
+It covers **data cleaning, EDA, NLP-based feature extraction, model building, evaluation, and deployment**.
 
 ---
 
-## 📂 Project Structure
+## 🛠 Tech Stack
+**Languages & Libraries:** Python, Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, Streamlit  
+**ML Algorithm:** Logistic Regression (TF-IDF Vectorized text data)  
+**Deployment:** Streamlit  
+
+---
+
+##  Project Structure
 ```
-project-1-titanic-survival/
+fake-news-detection/
 │
-├── titanic.ipynb           # Notebook with EDA, preprocessing, model training
-├── main.py                 # Streamlit web app
-├── model.pkl               # Saved ML model
+├── fake_news.ipynb         # Notebook with EDA, preprocessing, model training
+├── app.py                  # Streamlit web app
+├── fake_news_model.pkl     # Saved ML model
+├── vectorizer.pkl          # Saved TF-IDF vectorizer (not included due to size)
 ├── requirements.txt        # Dependencies
-├── data/                   # Dataset files
-│   ├── train.csv
-│   ├── test.csv
-│   └── gender_submission.csv
-└── images/                 # Plots & screenshots
+└── data/                   # Dataset files (from Kaggle)
 ```
+
 ---
 
 ## 📊 Dataset
-**Source:** [Kaggle Titanic Dataset](https://www.kaggle.com/c/titanic)  
+**Source:** [Kaggle - Fake News Dataset](https://www.kaggle.com/c/fake-news/data)  
+
 **Features:**
-- **Pclass** — Passenger class (1, 2, 3)
-- **Sex** — Male/Female
-- **Age** — Passenger’s age in years
-- **SibSp** — Siblings/Spouses aboard
-- **Parch** — Parents/Children aboard
-- **Fare** — Ticket fare
-- **Embarked** — Port of embarkation (C, Q, S)
+- **Title** — Headline of the article  
+- **Text** — News article content  
+- **Author** — Author of the article  
+- **Subject** — Category of the article  
 
 **Target:**
-- **Survived** — 1 if survived, 0 if not
+- **Label** — 1 = Fake, 0 = Real  
 
 ---
 
 ## 🛠 Workflow
-1. **Data Preprocessing**
-   - Handle missing values
-   - Encode categorical variables
-   - Scale numerical features
-2. **Exploratory Data Analysis (EDA)**
-   - Visualize survival rates by gender, class, and age
-   - Correlation analysis
-3. **Feature Engineering**
-   - Transform categorical to numerical
-4. **Model Training**
-   - RandomForest Classifier
-5. **Evaluation**
-   - Accuracy, F1-score, Confusion Matrix
-6. **Deployment**
-   - Streamlit app for live predictions
+1. **Data Preprocessing**  
+   - Remove missing values  
+   - Clean text data (lowercasing, removing punctuation, stopwords, etc.)  
+
+2. **Exploratory Data Analysis (EDA)**  
+   - Visualize class distribution  
+   - Analyze word frequency for fake vs real  
+
+3. **Feature Engineering**  
+   - Convert text to numerical vectors using **TF-IDF Vectorizer**  
+
+4. **Model Training**  
+   - Logistic Regression classifier  
+
+5. **Evaluation**  
+   - Accuracy, Precision, Recall, F1-score  
+
+6. **Deployment**  
+   - Interactive Streamlit app for live predictions  
 
 ---
 
 ## 📈 Results & Insights
-- **Accuracy:** ~85% (RandomForest on validation set)  
-- **Key Findings:**
-  - Women had a **significantly higher** survival rate than men
-  - First-class passengers were more likely to survive
-  - Younger passengers had slightly better survival odds
-
-*(Add EDA plots here)*
+- **Accuracy:** ~92% (Logistic Regression with TF-IDF)  
+- **Key Findings:**  
+  - Fake news articles often have more sensational words and clickbait titles  
+  - Real news tends to have more structured sentences and factual reporting  
 
 ---
 
-## 🚀 Run Locally
+## ⚠ Missing `vectorizer.pkl`
+Due to file size limitations, `vectorizer.pkl` is **not included**.  
+**Alternative:** Recreate it by running `fake_news.ipynb`:
+```python
+from sklearn.feature_extraction.text import TfidfVectorizer
+vectorizer = TfidfVectorizer(max_df=0.7)
+vectorizer.fit(X_train)  # X_train from your dataset split
+
+import pickle
+with open("vectorizer.pkl", "wb") as f:
+    pickle.dump(vectorizer, f)
+```
+
+---
+
+## 💻 Run Locally
+
 ### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/sanhith30/Data-Science-And-ML-Projects.git
-cd titanic survival prediction
+git clone https://github.com/Sanhith30/Data-Science-And-ML-Projects.git
+cd "Fake News Detection"
 ```
+
 ### 2️⃣ Install Requirements
 ```bash
 pip install -r requirements.txt
 ```
-### 3️⃣ Run the Notebook
+
+### 3️⃣ Run the Notebook (to train model & vectorizer)
 ```bash
-jupyter notebook titanic.ipynb
+jupyter notebook fake_news.ipynb
 ```
+
 ### 4️⃣ Run the Streamlit App
 ```bash
-streamlit run main.py
+streamlit run app.py
 ```
 
 ---
 
-## 🌐 Live Demo
-*(If you deploy your Streamlit app to Streamlit Cloud, Render, or Heroku, add the link here)*  
-[Live Demo Link](https://titanic-survival-prediction-sanhith.streamlit.app/)
+
 
 ---
 
 ## 📸 Screenshots
-![alt text](image.png)
+![Fake News App Screenshot](images/Screenshot.png)
 
+---
 
+## 🚀 Future Improvements
+- Try advanced NLP models (BERT, RoBERTa) for better accuracy  
+- Perform hyperparameter tuning  
+- Add explainability (SHAP values)  
+- Improve UI with news scraping feature  
 
-## 🏆 Skills Demonstrated
-- Data Preprocessing
-- Exploratory Data Analysis
-- Feature Engineering
-- Machine Learning Model Training
-- Model Evaluation
-- Web App Deployment
+---
 
+## 🧠 Skills Demonstrated
+- Data Cleaning & Preprocessing  
+- Exploratory Data Analysis (EDA)  
+- Natural Language Processing (NLP)  
+- Machine Learning Model Training  
+- Model Evaluation  
+- Web App Deployment  
+
+---
 
 ## 📬 Contact
-**Author:** THIKKAVARAPU SANHITH
-[LinkedIn](https://linkedin.com/in/sanhith30) | [GitHub](https://github.com/sanhith30)
+**Author:** THIKKAVARAPU SANHITH  
+[LinkedIn](https://linkedin.com/in/sanhith30) | [GitHub](https://github.com/sanhith30)  
