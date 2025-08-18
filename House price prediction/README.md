@@ -12,7 +12,7 @@ A machine learning-powered web application that predicts house rental prices in 
 
 ## Screenshots
 
-![App Interface](screencapture1.png) 
+![App Interface](images/screencapture1.png) 
 ![App Interface](screencapture2.png)
 ![App Interface](screencapture3.png)
 
