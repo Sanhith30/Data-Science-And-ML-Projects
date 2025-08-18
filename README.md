@@ -54,4 +54,41 @@ A text classification project that applies Natural Language Processing (NLP) and
 
 ### Deployment:
 The model is deployed using **Streamlit** and can be run locally or hosted on platforms like **Streamlit Cloud**.
+### 3RD Project  
+#### [3. Hyderabad House Price Prediction](https://github.com/Sanhith30/Data-Science-And-ML-Projects/tree/main/House_Price_Prediction)  
+A **machine learning-powered web application** that predicts **house rental prices in Hyderabad, India**.  
+Built with **Streamlit** and **Random Forest Regression**, this app provides accurate price estimates based on property characteristics.  
+
+---
+
+### This project includes:  
+- **Data Cleaning & Preprocessing**  
+- **Feature Engineering**  
+- **Model Building & Evaluation**  
+- **Cross-Validation & Model Performance Metrics**  
+- **Interactive Web App with Streamlit**  
+- **Data Visualizations & Insights**  
+
+---
+
+### Algorithms Used:  
+- ![Random Forest](https://img.shields.io/badge/Algorithm-Random%20Forest-green)  
+
+---
+
+### Tools & Libraries:  
+[![Python](https://img.shields.io/badge/Python-3.11%2B-blue)](https://www.python.org/)  
+[![Pandas](https://img.shields.io/badge/Pandas-2.0%2B-blue)](https://pandas.pydata.org/)  
+[![NumPy](https://img.shields.io/badge/NumPy-1.24%2B-blue)](https://numpy.org/)  
+[![Matplotlib](https://img.shields.io/badge/Matplotlib-3.7%2B-blue)](https://matplotlib.org/)  
+[![Seaborn](https://img.shields.io/badge/Seaborn-0.12%2B-blue)](https://seaborn.pydata.org/)  
+[![Scikit-learn](https://img.shields.io/badge/Scikit--learn-1.3%2B-blue)](https://scikit-learn.org/stable/)  
+[![Plotly](https://img.shields.io/badge/Plotly-5.15%2B-orange)](https://plotly.com/)  
+![Streamlit](https://img.shields.io/badge/Streamlit-1.28%2B-ff69b4)  
+
+---
+
+### Deployment:  
+The model is deployed using **Streamlit** and can be run locally or hosted on platforms like **Streamlit Cloud**.  
+
 
