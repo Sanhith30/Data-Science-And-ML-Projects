@@ -28,7 +28,7 @@ A comprehensive data analysis and machine learning project focused on predicting
 ### 2ND Project  
 #### [2.Fake News Detection](https://github.com/Sanhith30/Data-Science-And-ML-Projects/tree/main/Fake%20News%20Detection)  
 A complete end-to-end Machine Learning project to detect whether a news article is **Real** or **Fake** using NLP techniques, datasets, and deployment.
-A text classification project that applies Natural Language Processing (NLP) and Machine Learning to detect fake news from real news.
+A text classification project that applies Natural Language Processing (NLP) and Machine Learning to detect fake news from real news
 
 ---
 
