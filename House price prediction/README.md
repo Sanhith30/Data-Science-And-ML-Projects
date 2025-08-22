@@ -12,8 +12,9 @@ A machine learning-powered web application that predicts house rental prices in 
 
 ## Screenshots
 
-![App Interface](screenshot.png) *(Add a screenshot of your app)*
-
+![App Interface](images/screencapture1.png)
+![App Interface](images/screencapture2.png)
+![App Interface](images/screencapture3.png)
 ## Installation
 
 ### Requirements
