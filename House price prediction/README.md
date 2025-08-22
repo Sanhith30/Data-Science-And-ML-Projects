@@ -2,6 +2,8 @@
 
 A machine learning-powered web application that predicts house rental prices in Hyderabad, India. Built with Streamlit and Random Forest regression, this app provides accurate price estimates based on property characteristics.
 
+**[Live Demo →](https://hyderabad-house-price.streamlit.app/)**
+
 ## Features
 
 - **Smart Price Prediction**: Uses Random Forest ML model for accurate estimates
