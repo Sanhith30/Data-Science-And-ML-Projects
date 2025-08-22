@@ -1,11 +1,6 @@
 # Data-Science-And-ML-Projects
 "End-to-end Data Science and Machine Learning projects portfolio with Python, ML, Deep Learning, NLP, and deployment-ready solutions."
-![Stars](https://img.shields.io/github/stars/Sanhith30/Data-Science-And-ML-Projects?style=social)
-![Forks](https://img.shields.io/github/forks/Sanhith30/Data-Science-And-ML-Projects?style=social)
-![Issues](https://img.shields.io/github/issues/Sanhith30/Data-Science-And-ML-Projects)
-![License](https://img.shields.io/github/license/Sanhith30/Data-Science-And-ML-Projects)
-![Last Commit](https://img.shields.io/github/last-commit/Sanhith30/Data-Science-And-ML-Projects)
-![Repo Size](https://img.shields.io/github/repo-size/Sanhith30/Data-Science-And-ML-Projects)
+
 # Data Science and ML Portfolio
 
 ## Projects
@@ -88,6 +83,15 @@ Built with **Streamlit** and **Random Forest Regression**, this app provides acc
 ---
 
 ### Deployment:  
-The model is deployed using **Streamlit** and can be run locally or hosted on platforms like **Streamlit Cloud**.  
+The model is deployed using **Streamlit** and can be run locally or hosted on platforms like **Streamlit Cloud**.
+
+![Stars](https://img.shields.io/github/stars/Sanhith30/Data-Science-And-ML-Projects?style=social)
+![Forks](https://img.shields.io/github/forks/Sanhith30/Data-Science-And-ML-Projects?style=social)
+![Issues](https://img.shields.io/github/issues/Sanhith30/Data-Science-And-ML-Projects)
+![License](https://img.shields.io/github/license/Sanhith30/Data-Science-And-ML-Projects)
+![Last Commit](https://img.shields.io/github/last-commit/Sanhith30/Data-Science-And-ML-Projects)
+![Repo Size](https://img.shields.io/github/repo-size/Sanhith30/Data-Science-And-ML-Projects)
+![Languages](https://img.shields.io/github/languages/top/Sanhith30/Data-Science-And-ML-Projects)
+
 
 
