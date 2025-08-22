@@ -1,6 +1,5 @@
 # Data-Science-And-ML-Projects
-A collection of end-to-end Data Science and Machine Learning projects with explanations, datasets, notebooks, and deployments.
-
+"End-to-end Data Science and Machine Learning projects portfolio with Python, ML, Deep Learning, NLP, and deployment-ready solutions."
 # Data Science and ML Portfolio
 
 ## Projects
