@@ -103,15 +103,7 @@ The project leverages feature engineering, vectorization techniques, and multipl
 #### Tools & Libraries:  
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/) [![Pandas](https://img.shields.io/badge/Pandas-1.0%2B-blue)](https://pandas.pydata.org/) [![NumPy](https://img.shields.io/badge/NumPy-1.18%2B-blue)](https://numpy.org/) [![Matplotlib](https://img.shields.io/badge/Matplotlib-3.0%2B-blue)](https://matplotlib.org/) [![Seaborn](https://img.shields.io/badge/Seaborn-0.10%2B-blue)](https://seaborn.pydata.org/) [![Scikit-learn](https://img.shields.io/badge/Scikit--learn-0.22%2B-blue)](https://scikit-learn.org/stable/) [![NLTK](https://img.shields.io/badge/NLTK-3.5%2B-yellowgreen)](https://www.nltk.org/) [![XGBoost](https://img.shields.io/badge/XGBoost-1.0%2B-orange)](https://xgboost.readthedocs.io/) [![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange)](https://jupyter.org/)
 
----
 
-![Stars](https://img.shields.io/github/stars/Sanhith30/Data-Science-And-ML-Projects?style=social)
-![Forks](https://img.shields.io/github/forks/Sanhith30/Data-Science-And-ML-Projects?style=social)
-![Issues](https://img.shields.io/github/issues/Sanhith30/Data-Science-And-ML-Projects)
-![License](https://img.shields.io/github/license/Sanhith30/Data-Science-And-ML-Projects)
-![Last Commit](https://img.shields.io/github/last-commit/Sanhith30/Data-Science-And-ML-Projects)
-![Repo Size](https://img.shields.io/github/repo-size/Sanhith30/Data-Science-And-ML-Projects)
-![Languages](https://img.shields.io/github/languages/top/Sanhith30/Data-Science-And-ML-Projects)
 
 ### Deployment:  
 The model is deployed using **Streamlit** and can be run locally or hosted on platforms like **Streamlit Cloud**.
