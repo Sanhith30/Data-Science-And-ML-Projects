@@ -1,144 +1,144 @@
-									
-<h1>QUORA QUESTION PAIR SIMILARITY PROJECT NOTES</h1>
-Over 100 million people visit Quora every month, so it's no surprise that many people ask similarly worded questions. Multiple questions with the same intent can cause seekers to spend more time finding the best answer to their question, and make writers feel they need to answer multiple versions of the same question. Quora values canonical questions because they provide a better experience to active seekers and writers, and offer more value to both of these groups in the long term. so main aim of project is that predicting whether pair of questions are similar or not. This could be useful to instantly provide answers to questions that have already been answered. Credits: Kaggle
+# QUORA QUESTION PAIR SIMILARITY PROJECT NOTES
 
-Problem Statement :
+Over 100 million people visit Quora every month, so it's no surprise that many people ask similarly worded questions. Multiple questions with the same intent can cause seekers to spend more time finding the best answer to their question, and make writers feel they need to answer multiple versions of the same question.  
+
+Quora values canonical questions because they provide a better experience to active seekers and writers, and offer more value to both of these groups in the long term.  
+
+👉 The **main aim** of this project is predicting whether a pair of questions are similar or not.  
+This could be useful to instantly provide answers to questions that have already been answered.  
+
+**Dataset Credits:** Kaggle  
+
+---
+
+## 📌 Problem Statement
 Identify which questions asked on Quora are duplicates of questions that have already been asked.
 
-Real world/Business Objectives and Constraints :
-The cost of a mis-classification can be very high.
-You would want a probability of a pair of questions to be duplicates so that you can choose any threshold of choice.
-No strict latency concerns.
-Interpretability is partially important.
-Performance Metric:
-log-loss
-Binary Confusion Matrix
+---
 
-<h3>BASICS</h3>
-<li>train.csv has the data</li>
-<li>features - id(int), qid1(int), qid2(int), question1(string), question2(string)</li>
-<li>label - is_duplicate(int)</li>
-<li>this is a binary classification problem</li>
-<li>metrics used will be log loss and binary confusion matrix</li>
+## 🎯 Business Objectives & Constraints
+- The cost of a mis-classification can be very high.  
+- Need probability outputs so threshold can be chosen.  
+- No strict latency concerns.  
+- Interpretability is partially important.  
 
+**Performance Metric:**
+- Log-loss  
+- Binary Confusion Matrix  
 
-<h3>EDA</h3>
-<li>bar chart of number of duplicate and non duplicate question pairs</li>
-<li>bar chart of number of questions which are repeated and not repeated in the entire dataset</li>
-<li>checking for duplicate data points in the dataset</li>
-<li>log histogram of frequency of questions (i.e how many times does a single question repeats in the dataset)</li>
-<li>check for null valued data points and filling the null values with empty string as mostly string data is missing</li>
+---
 
+## 📂 Project Structure
+This repository contains the following notebooks:
 
-<h3>FEATURE EXTRACTION</h3>
-<li>freq_qid1 = Frequency of qid1's</li>
-<li>freq_qid2 = Frequency of qid2's</li>
-<li>q1len = Length of q1</li>
-<li>q2len = Length of q2</li>
-<li>q1_n_words = Number of words in Question 1</li>
-<li>q2_n_words = Number of words in Question 2</li>
-<li>word_Common = (Number of common unique words in Question 1 and Question 2)</li>
-<li>word_Total =(Total num of words in Question 1 + Total num of words in Question 2)</li>
-<li>word_share = (word_common)/(word_Total) (kind of intersection/union ratio)</li>
-<li>freq_q1+freq_q2 = sum total of frequency of qid1 and qid2</li>
-<li>freq_q1-freq_q2 = absolute difference of frequency of qid1 and qid2</li>
-<li>The average word share and Common no. of words of qid1 and qid2 is more when they are duplicate(Similar)</li>
-<li>The distributions of the word_Common feature in similar and non-similar questions are highly overlapping</li>
+1. **[1.Quora_Questions(Basic).ipynb](./1.Quora_Questions(Basic).ipynb)** – Basic dataset exploration and understanding.  
+2. **[2.Quore_Que_preprocessing(advanced_FE).ipynb](./2.Quore_Que_preprocessing(advanced_FE).ipynb)** – Data preprocessing and advanced feature engineering.  
+3. **[3.Mean_tfidf_W2V.ipynb](./3.Mean_tfidf_W2V.ipynb)** – Vectorization using TF-IDF and TF-IDF Word2Vec.  
+4. **[4.Model_Training.ipynb](./4.Model_Training.ipynb)** – Model training, evaluation, and performance comparison.  
 
+---
 
-<h3>PREPROCESSING OF TEXT</h3>
-<li>remove html tags</li>
-<li>remove punctuations</li>
-<li>perform stemming</li>
-<li>remove stopwords
-<li>expand contractions (eg wasn't -> was not)
+## 📊 BASICS
+- `train.csv` has the data  
+- Features → `id (int)`, `qid1 (int)`, `qid2 (int)`, `question1 (string)`, `question2 (string)`  
+- Label → `is_duplicate (int)`  
+- Binary classification problem  
+- Metrics → log loss & binary confusion matrix  
 
+---
 
-<h3>ADVANCED FEATURE EXTRACTION</h3>
-<h5>Definitions</h5>
-<li>Token: You get a token by splitting sentence a space
-<li>Stop_Word : stop words as per NLTK.
-<li>Word : A token that is not a stop_word
-<h5>Features</h5>
-<li>cwc_min : Ratio of common_word_count to min lenghth of word count of Q1 and Q2
-<li>cwc_min = common_word_count / (min(len(q1_words), len(q2_words))
-<li>cwc_max : Ratio of common_word_count to max lenghth of word count of Q1 and Q2
-<li>cwc_max = common_word_count / (max(len(q1_words), len(q2_words))
-<li>csc_min : Ratio of common_stop_count to min lenghth of stop count of Q1 and Q2
-<li>csc_min = common_stop_count / (min(len(q1_stops), len(q2_stops))
-<li>csc_max : Ratio of common_stop_count to max lenghth of stop count of Q1 and Q2
-<li>csc_max = common_stop_count / (max(len(q1_stops), len(q2_stops))
-<li>ctc_min : Ratio of common_token_count to min lenghth of token count of Q1 and Q2
-<li>ctc_min = common_token_count / (min(len(q1_tokens), len(q2_tokens))
-<li>ctc_max : Ratio of common_token_count to max lenghth of token count of Q1 and Q2
-<li>ctc_max = common_token_count / (max(len(q1_tokens), len(q2_tokens))
-<li>last_word_eq : Check if First word of both questions is equal or not
-<li>last_word_eq = int(q1_tokens[-1] == q2_tokens[-1])
-<li>first_word_eq : Check if First word of both questions is equal or not
-<li>first_word_eq = int(q1_tokens[0] == q2_tokens[0])
-<li>abs_len_diff : Abs. length difference
-<li>abs_len_diff = abs(len(q1_tokens) - len(q2_tokens))
-<li>mean_len : Average Token Length of both Questions
-<li>mean_len = (len(q1_tokens) + len(q2_tokens))/2
-<li>fuzz_ratio : http://chairnerd.seatgeek.com/fuzzywuzzy-fuzzy-string-matching-in-python/
-<li>fuzz_partial_ratio : http://chairnerd.seatgeek.com/fuzzywuzzy-fuzzy-string-matching-in-python/
-<li>token_sort_ratio : http://chairnerd.seatgeek.com/fuzzywuzzy-fuzzy-string-matching-in-python/
-<li>token_set_ratio : http://chairnerd.seatgeek.com/fuzzywuzzy-fuzzy-string-matching-in-python/
-<li>longest_substr_ratio : Ratio of length longest common substring to min length of token count of Q1 and Q2
-<li>longest_substr_ratio = len(longest common substring) / (min(len(q1_tokens), len(q2_tokens))
+## 📊 EDA
+- Bar chart of duplicate vs non-duplicate pairs  
+- Bar chart of repeated vs non-repeated questions  
+- Checking duplicate data points  
+- Log histogram of frequency of questions  
+- Null value check → filled with empty strings  
 
+---
 
-<h3>ANALYSIS OF EXTRACTED FEATURES</h3>
-<li>word cloud of duplicate question pairs is plotted
-<li>word cloud of non duplicate question pairs is plotted
-<li>a total of 15 NLP features are made now.
+## 🛠️ Feature Extraction
+- freq_qid1, freq_qid2  
+- q1len, q2len, q1_n_words, q2_n_words  
+- word_common, word_total, word_share  
+- freq_q1+freq_q2, freq_q1-freq_q2  
+- Avg. word share & common words higher in duplicate pairs  
+- Distribution of word_common overlaps in similar/non-similar pairs  
 
+---
 
-<h3>VISUALIZATION</h3>
-<li>t-SNE and PCA are used to visualize the 15-d data in 3-d
+## 🧹 Preprocessing of Text
+- Remove HTML tags  
+- Remove punctuations  
+- Perform stemming  
+- Remove stopwords  
+- Expand contractions (e.g., *wasn't → was not*)  
 
+---
 
-<h3>VECTORIZATION</h3>
-<li>Used TFIDF for vectorization and made a dictionary (key:word, value:tf-idf score)
-<li>Used TFIDF word2vec by using GLOVE model instead of Google's Word2Vec model
-<li>This is done separately for all question1's and then all the question2's
-<li>Text vectors made have 96 dimensions (both question1 and question2 vectors)
+## ⚙️ Advanced Feature Extraction
+**Definitions**  
+- Token = split sentence by space  
+- Stop_Word = stopwords from NLTK  
+- Word = token not a stopword  
 
+**Features**  
+- cwc_min, cwc_max → common words ratio  
+- csc_min, csc_max → common stopwords ratio  
+- ctc_min, ctc_max → common tokens ratio  
+- last_word_eq, first_word_eq  
+- abs_len_diff, mean_len  
+- fuzz_ratio, fuzz_partial_ratio, token_sort_ratio, token_set_ratio  
+- longest_substr_ratio  
 
-<h3>FINAL DATAFRAME PREPARATION</h3>
-  <h5>Finally these data frames are merged</h5>
-<li>Dataframe on which simple preprocessing is done
-<li>Dataframe which has the NLP features
-<li>Dataframe which has the vectors for all question1's
-<li>Dataframe which has the vectors for all question2's
-<li>The final DataFrame has 218 features.
+---
 
+## 📑 Analysis of Extracted Features
+- Word cloud of duplicate pairs  
+- Word cloud of non-duplicate pairs  
+- 15+ NLP features created  
 
+---
 
-<h3>TRAIN TEST SPLIT</h3>
-<li>Training data -> 70%
-<li>Testing data -> 30%
-  
-  
+## 📈 Visualization
+- t-SNE & PCA → 15D data → 3D  
 
-<h3>MODELS</h3>
-<li>A random model is built which gives a log loss of <b>0.89</b> which is the <b>worst case log loss</b>
-<li>Logistic Regression model is used and the hyperparameter chosen for tuning is alpha 
-     l2 regularization is used and calibrated classifier cross validation is used. <br>
-     Confusion matrix is plotted <br>
-  Best value of log loss is = <b>0.43</b>
-<li>SVM classifier model is used and the hyperparameter chosen for tuning is alpha
-     l1 regularization is used and calibrated classifier cross validation is used. <br>
-     Confusion matrix is plotted <br>
-  Best value of log loss is = <b>0.44</b>
-<li>XGBoost model is used<br>
-     Confusion matrix is plotted <br>
-  Best value of log loss is = <b>0.36(without much hyperparameter tuning)</b> <br>
-  XGBoost v1 log loss is = <b>0.33</b> 
-<li>Decision Tree model is used by using RandomizedSearchCV on some parameters <br>
-     Confusion matrix is plotted <br>
-  Best value of log loss is = <b>0.41</b>
-<li>Random Forest model is used by using RandomizedSearchCV on some parameters <br>
-     Confusion matrix is plotted <br>
-  Best value of log loss is = <b>0.43</b>
+---
 
+## 📐 Vectorization
+- TF-IDF dictionary (word → tf-idf score)  
+- TF-IDF Word2Vec (GloVe model)  
+- Separate vectors for Q1 and Q2  
+- Vectors → 96 dimensions each  
+
+---
+
+## 🧾 Final Dataframe
+- Preprocessed dataframe  
+- NLP features dataframe  
+- Q1 vector dataframe  
+- Q2 vector dataframe  
+- **Final dataframe → 218 features**  
+
+---
+
+## 📚 Train-Test Split
+- Train: 70%  
+- Test: 30%  
+
+---
+
+## 🤖 Models & Results
+- **Random Model** → Log loss: `0.89` (worst case)  
+- **Logistic Regression** → Log loss: `0.43`  
+- **SVM** → Log loss: `0.44`  
+- **XGBoost** → Log loss: `0.36` (improved: `0.33`)  
+- **Decision Tree** → Log loss: `0.41`  
+- **Random Forest** → Log loss: `0.43`  
+
+---
+
+## 🚀 How to Run
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/your-username/quora-question-pair-similarity.git
+   cd quora-question-pair-similarity
