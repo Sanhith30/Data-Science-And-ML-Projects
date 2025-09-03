@@ -81,7 +81,7 @@ Built with **Streamlit** and **Random Forest Regression**, this app provides acc
 [![Python](https://img.shields.io/badge/Python-3.11%2B-blue)](https://www.python.org/)  [![Pandas](https://img.shields.io/badge/Pandas-2.0%2B-blue)](https://pandas.pydata.org/)  [![NumPy](https://img.shields.io/badge/NumPy-1.24%2B-blue)](https://numpy.org/)  [![Matplotlib](https://img.shields.io/badge/Matplotlib-3.7%2B-blue)](https://matplotlib.org/)  [![Seaborn](https://img.shields.io/badge/Seaborn-0.12%2B-blue)](https://seaborn.pydata.org/)  [![Scikit-learn](https://img.shields.io/badge/Scikit--learn-1.3%2B-blue)](https://scikit-learn.org/stable/)  [![Plotly](https://img.shields.io/badge/Plotly-5.15%2B-orange)](https://plotly.com/)  ![Streamlit](https://img.shields.io/badge/Streamlit-1.28%2B-ff69b4)  
 
 ---
-### [4th Quora Question Pair Similarity](https://github.com/Sanhith30/Data-Science-And-ML-Projects/tree/main/Quora%20Question%20Pair%20Similarity)  
+### [4th Quora Question Pair Similarity](https://github.com/Sanhith30/Data-Science-And-ML-Projects/tree/main/Quora_question)  
 A Natural Language Processing (NLP) and Machine Learning project focused on predicting whether two Quora questions are semantically similar (duplicates) or not.  
 The project leverages feature engineering, vectorization techniques, and multiple ML algorithms for evaluation.
 
