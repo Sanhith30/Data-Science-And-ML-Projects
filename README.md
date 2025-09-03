@@ -105,7 +105,7 @@ The project leverages feature engineering, vectorization techniques, and multipl
 
 
 ---
-# [5th Rock vs Mine Prediction](https://github.com/Sanhith30/Data-Science-And-ML-Projects/Rock_vs_Mine_Prediction)  
+# [5th Rock vs Mine Prediction](https://github.com/Sanhith30/Data-Science-And-ML-Projects/tree/main/SONAR_Rock_vs_Mine_Prediction)  
 
 A Machine Learning classification project to predict whether a given sonar signal corresponds to a **Rock** or a **Mine (Metal Cylinder)**.  
 This project leverages multiple ML models, feature visualization, and evaluation techniques.  
