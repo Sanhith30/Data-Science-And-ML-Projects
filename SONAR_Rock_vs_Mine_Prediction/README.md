@@ -2,13 +2,13 @@
 
 This project is a **machine learning classification task** using the **Sonar dataset**, where the goal is to predict whether an object is a **rock** or a **mine** based on sonar signal data.  
 
-## 📂 Project Structure
+##  Project Structure
 - `Rock_vs_Mine_Prediction_Updated.ipynb` → Main Jupyter notebook (data preprocessing, model training, evaluation).  
 - `README.md` → Project documentation.  
 
 ---
 
-## 📊 Dataset
+##  Dataset
 - **Source:** UCI Sonar Dataset  
 - **Features:** 60 continuous values (sonar signals).  
 - **Target:**  
@@ -17,7 +17,7 @@ This project is a **machine learning classification task** using the **Sonar dat
 
 ---
 
-## ⚙️ Steps in the Project
+##  Steps in the Project
 1. **Data Preprocessing**  
    - Encoding categorical labels (Rock → 0, Mine → 1).  
    - Train-test split.  
@@ -47,14 +47,14 @@ This project is a **machine learning classification task** using the **Sonar dat
 
 ---
 
-## 🚀 Results
+##  Results
 - Best performance observed with **[add best model name here]**.  
 - Achieved **Accuracy: ~XX%**, **AUC: ~YY**.  
 - Models showed trade-offs between precision and recall (especially important in mine detection).  
 
 ---
 
-## 📌 How to Run
+##  How to Run
 1. Clone this repository:  
    ```bash
    git clone https://github.com/your-username/Rock-vs-Mine-Prediction.git
@@ -71,7 +71,7 @@ This project is a **machine learning classification task** using the **Sonar dat
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 - Python  
 - Scikit-learn  
 - Matplotlib & Seaborn  
@@ -79,17 +79,17 @@ This project is a **machine learning classification task** using the **Sonar dat
 
 ---
 
-## 📖 Future Work
+##  Future Work
 - Hyperparameter tuning with GridSearchCV / RandomizedSearchCV.  
 - Try ensemble models like XGBoost, Random Forest, or LightGBM.  
 - Deploy as a web app (Streamlit/Flask).  
 
 ---
 
-## 🙌 Acknowledgements
+##  Acknowledgements
 - **UCI Machine Learning Repository** for the Sonar dataset.  
 - Open-source ML community for resources and inspiration.  
 
 ---
 
-✨ *Contributions are welcome! Fork the repo, raise issues, or create pull requests.*  
+ *Contributions are welcome! Fork the repo, raise issues, or create pull requests.*  
