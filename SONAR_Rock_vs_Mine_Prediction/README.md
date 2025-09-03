@@ -4,7 +4,6 @@ This project is a **machine learning classification task** using the **Sonar dat
 
 ## 📂 Project Structure
 - `Rock_vs_Mine_Prediction_Updated.ipynb` → Main Jupyter notebook (data preprocessing, model training, evaluation).  
-- `results/` *(optional)* → Store plots like confusion matrix, ROC curves, etc.  
 - `README.md` → Project documentation.  
 
 ---
