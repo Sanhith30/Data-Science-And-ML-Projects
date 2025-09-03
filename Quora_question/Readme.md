@@ -4,19 +4,19 @@ Over 100 million people visit Quora every month, so it's no surprise that many p
 
 Quora values canonical questions because they provide a better experience to active seekers and writers, and offer more value to both of these groups in the long term.  
 
-👉 The **main aim** of this project is predicting whether a pair of questions are similar or not.  
+ The **main aim** of this project is predicting whether a pair of questions are similar or not.  
 This could be useful to instantly provide answers to questions that have already been answered.  
 
 **Dataset Credits:** Kaggle  
 
 ---
 
-## 📌 Problem Statement
+##  Problem Statement
 Identify which questions asked on Quora are duplicates of questions that have already been asked.
 
 ---
 
-## 🎯 Business Objectives & Constraints
+##  Business Objectives & Constraints
 - The cost of a mis-classification can be very high.  
 - Need probability outputs so threshold can be chosen.  
 - No strict latency concerns.  
@@ -28,7 +28,7 @@ Identify which questions asked on Quora are duplicates of questions that have al
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 This repository contains the following notebooks:
 
 1. **[1.Quora_Questions(Basic).ipynb](./1.Quora_Questions(Basic).ipynb)** – Basic dataset exploration and understanding.  
@@ -38,7 +38,7 @@ This repository contains the following notebooks:
 
 ---
 
-## 📊 BASICS
+## BASICS
 - `train.csv` has the data  
 - Features → `id (int)`, `qid1 (int)`, `qid2 (int)`, `question1 (string)`, `question2 (string)`  
 - Label → `is_duplicate (int)`  
@@ -47,7 +47,7 @@ This repository contains the following notebooks:
 
 ---
 
-## 📊 EDA
+##  EDA
 - Bar chart of duplicate vs non-duplicate pairs  
 - Bar chart of repeated vs non-repeated questions  
 - Checking duplicate data points  
@@ -56,7 +56,7 @@ This repository contains the following notebooks:
 
 ---
 
-## 🛠️ Feature Extraction
+##  Feature Extraction
 - freq_qid1, freq_qid2  
 - q1len, q2len, q1_n_words, q2_n_words  
 - word_common, word_total, word_share  
@@ -66,7 +66,7 @@ This repository contains the following notebooks:
 
 ---
 
-## 🧹 Preprocessing of Text
+##  Preprocessing of Text
 - Remove HTML tags  
 - Remove punctuations  
 - Perform stemming  
@@ -75,7 +75,7 @@ This repository contains the following notebooks:
 
 ---
 
-## ⚙️ Advanced Feature Extraction
+##  Advanced Feature Extraction
 **Definitions**  
 - Token = split sentence by space  
 - Stop_Word = stopwords from NLTK  
@@ -92,19 +92,19 @@ This repository contains the following notebooks:
 
 ---
 
-## 📑 Analysis of Extracted Features
+##  Analysis of Extracted Features
 - Word cloud of duplicate pairs  
 - Word cloud of non-duplicate pairs  
 - 15+ NLP features created  
 
 ---
 
-## 📈 Visualization
+##  Visualization
 - t-SNE & PCA → 15D data → 3D  
 
 ---
 
-## 📐 Vectorization
+##  Vectorization
 - TF-IDF dictionary (word → tf-idf score)  
 - TF-IDF Word2Vec (GloVe model)  
 - Separate vectors for Q1 and Q2  
@@ -112,7 +112,7 @@ This repository contains the following notebooks:
 
 ---
 
-## 🧾 Final Dataframe
+##  Final Dataframe
 - Preprocessed dataframe  
 - NLP features dataframe  
 - Q1 vector dataframe  
@@ -121,13 +121,13 @@ This repository contains the following notebooks:
 
 ---
 
-## 📚 Train-Test Split
+##  Train-Test Split
 - Train: 70%  
 - Test: 30%  
 
 ---
 
-## 🤖 Models & Results
+##  Models & Results
 - **Random Model** → Log loss: `0.89` (worst case)  
 - **Logistic Regression** → Log loss: `0.43`  
 - **SVM** → Log loss: `0.44`  
@@ -137,7 +137,7 @@ This repository contains the following notebooks:
 
 ---
 
-## 🚀 How to Run
+##  How to Run
 1. Clone this repository:
    ```bash
    git clone https://github.com/your-username/quora-question-pair-similarity.git
