@@ -121,24 +121,13 @@ This project leverages multiple ML models, feature visualization, and evaluation
 
 ##  Algorithms Used:  
 
-![Logistic Regression](https://img.shields.io/badge/Algorithm-Logistic%20Regression-blue)  
-![SVM](https://img.shields.io/badge/Algorithm-SVM-red)  
-![KNN](https://img.shields.io/badge/Algorithm-KNN-green)  
-![Gradient Boosting](https://img.shields.io/badge/Algorithm-Gradient%20Boosting-yellow)  
-![MLP Neural Net](https://img.shields.io/badge/Algorithm-MLP%20Neural%20Net-purple)  
+![Logistic Regression](https://img.shields.io/badge/Algorithm-Logistic%20Regression-blue)  ![SVM](https://img.shields.io/badge/Algorithm-SVM-red)  ![KNN](https://img.shields.io/badge/Algorithm-KNN-green)  ![Gradient Boosting](https://img.shields.io/badge/Algorithm-Gradient%20Boosting-yellow)  ![MLP Neural Net](https://img.shields.io/badge/Algorithm-MLP%20Neural%20Net-purple)  
 
 ---
 
 ##  Tools & Libraries:  
 
-![Python](https://img.shields.io/badge/Python-3.8+-blue?logo=python)  
-![Pandas](https://img.shields.io/badge/Library-Pandas-green?logo=pandas)  
-![NumPy](https://img.shields.io/badge/Library-NumPy-orange?logo=numpy)  
-![Matplotlib](https://img.shields.io/badge/Library-Matplotlib-lightblue)  
-![Seaborn](https://img.shields.io/badge/Library-Seaborn-teal)  
-![Scikit-learn](https://img.shields.io/badge/Library-Scikit--learn-red?logo=scikitlearn)  
-![XGBoost](https://img.shields.io/badge/Library-XGBoost-brown)  
-![Jupyter Notebook](https://img.shields.io/badge/Tool-Jupyter%20Notebook-orange?logo=jupyter)  
+![Python](https://img.shields.io/badge/Python-3.8+-blue?logo=python)  ![Pandas](https://img.shields.io/badge/Library-Pandas-green?logo=pandas)  ![NumPy](https://img.shields.io/badge/Library-NumPy-orange?logo=numpy)  ![Matplotlib](https://img.shields.io/badge/Library-Matplotlib-lightblue)  ![Seaborn](https://img.shields.io/badge/Library-Seaborn-teal)  ![Scikit-learn](https://img.shields.io/badge/Library-Scikit--learn-red?logo=scikitlearn)  ![XGBoost](https://img.shields.io/badge/Library-XGBoost-brown)  ![Jupyter Notebook](https://img.shields.io/badge/Tool-Jupyter%20Notebook-orange?logo=jupyter)  
 
 
 ---
@@ -149,13 +138,7 @@ The project is structured for **local Jupyter Notebook execution**, but can be e
 ---
 
 ## 📊 Repo Insights:  
-![Stars](https://img.shields.io/github/stars/Sanhith30/Data-Science-And-ML-Projects?style=social)  
-![Forks](https://img.shields.io/github/forks/Sanhith30/Data-Science-And-ML-Projects?style=social)  
-![Issues](https://img.shields.io/github/issues/Sanhith30/Data-Science-And-ML-Projects)  
-![License](https://img.shields.io/github/license/Sanhith30/Data-Science-And-ML-Projects)  
-![Last Commit](https://img.shields.io/github/last-commit/Sanhith30/Data-Science-And-ML-Projects)  
-![Repo Size](https://img.shields.io/github/repo-size/Sanhith30/Data-Science-And-ML-Projects)  
-![Languages](https://img.shields.io/github/languages/top/Sanhith30/Data-Science-And-ML-Projects)  
+![Stars](https://img.shields.io/github/stars/Sanhith30/Data-Science-And-ML-Projects?style=social)  ![Forks](https://img.shields.io/github/forks/Sanhith30/Data-Science-And-ML-Projects?style=social)  ![Issues](https://img.shields.io/github/issues/Sanhith30/Data-Science-And-ML-Projects)  ![License](https://img.shields.io/github/license/Sanhith30/Data-Science-And-ML-Projects)  ![Last Commit](https://img.shields.io/github/last-commit/Sanhith30/Data-Science-And-ML-Projects)  ![Repo Size](https://img.shields.io/github/repo-size/Sanhith30/Data-Science-And-ML-Projects)  ![Languages](https://img.shields.io/github/languages/top/Sanhith30/Data-Science-And-ML-Projects)  
 
 
 
