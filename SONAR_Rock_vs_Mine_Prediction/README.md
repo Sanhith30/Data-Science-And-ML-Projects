@@ -1,4 +1,4 @@
-# Rock vs Mine Prediction 🎯
+# Rock vs Mine Prediction 
 
 This project is a **machine learning classification task** using the **Sonar dataset**, where the goal is to predict whether an object is a **rock** or a **mine** based on sonar signal data.  
 
