@@ -1,0 +1,7 @@
+name: myenv
+dependencies:
+  - python=3.10
+  - numpy
+  - pandas
+  - scikit-learn
+  # add your required dependencies here
