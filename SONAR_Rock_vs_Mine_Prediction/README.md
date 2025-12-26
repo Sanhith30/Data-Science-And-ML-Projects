@@ -21,7 +21,7 @@ This project is a **machine learning classification task** using the **Sonar dat
 1. **Data Preprocessing**  
    - Encoding categorical labels (Rock → 0, Mine → 1).  
    - Train-test split.  
-   - Standardization of features.  
+   - Standardization of features
 
 2. **Exploratory Data Analysis (EDA)**  
    - Class distribution visualization.  
