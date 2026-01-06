@@ -116,7 +116,6 @@ This project leverages multiple ML models, feature visualization, and evaluation
 - Dimensionality Reduction (PCA)  
 - Model Building & Comparison  
 - Confusion Matrix, ROC, Precision-Recall Curves  
-- Model Performance Comparison  
 
 ---
 
