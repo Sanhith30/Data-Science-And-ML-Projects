@@ -12,7 +12,7 @@ A comprehensive data analysis and machine learning project focused on predicting
 ### This project includes:  
 - **Data Exploration & Cleaning**  
 - **Feature Engineering**  
-- **Model Building & Evaluation**  
+- **Model Building &Evaluation**  
 - **Visualizations & Insights**  
 
 ### Algorithms Used:  
