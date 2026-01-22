@@ -1,7 +1,7 @@
 # Data-Science-And-ML-Projects
 "End-to-end Data Science and Machine Learning projects portfolio with Python, ML, Deep Learning, NLP, and deployment-ready solutions."
 
-# Data Science and ML Projects
+# Data Science and ML Projectss
 
 
 ## Projects
